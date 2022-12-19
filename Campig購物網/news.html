@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息</title>
+
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+
+    <style>
+        body {
+
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <!-- 頁首 -->
+        <div class="header_inner">
+            <div class="head" id="top">
+                <div class="logo ">
+                    <a href="campig.html"><img src="./image/header/logo_block_1.jpg" alt="logo"
+                            style="width:150px; height:50px;"></a>
+                </div>
+
+                <div class="header_right">
+                    <a href="login.php"><img src="./image/header/user-solid.svg" alt="person"
+                            style="width: 35px; height:35px;"></a>
+                    <a href="shoppingPage.html"><img src="./image/header/cart-shopping-solid.svg" alt="shoppingcar"
+                            style="width: 35px; height:35px; margin: 0 20px;"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--導覽列  -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed w-100">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="campig.html" class="nav-link actvie">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link actvie">商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link actvie">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recmommed.html" class="nav-link actvie">營區推薦</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- 主打商品圖片輪播 -->
+        <div class="container">
+            <!-- 免運活動 -->
+            <div class="header_news">
+                <p class="newsMove">&#9658 " 全館 " 宅配滿2000元免運；超商滿1200元免運</p>
+            </div>
+            <div id="carouselControl" data-bs-ride="carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./image/最新消息/輪播2.jpg" class="d-block w-100" alt="輪播2">
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./image/最新消息/輪播3.png" class="d-block w-100" alt="輪播3">
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="product.html"><img src="./image/最新消息/輪播4.png" class="d-block w-100" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControl"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
+            <!-- 活動標題 -->
+            <div class="title fs-1 ">
+                <p>\\ 最新消息 //</p>
+            </div>
+            <!-- 2個橫向主打活動 -->
+            <!-- 活動一 -->
+            <div class="row ">
+                <div class="col-lg-6 p-2">
+                    <div class="card" style="width: 400px;">
+                        <img src="./image/最新消息/中秋限量組.jpg" alt="中秋限量組">
+                        <div class="card-body">
+                            <h5 class="card-title">中秋特輯</h5>
+                            <p class="card-text">丸了~丸了~丸了</p>
+                            <button type="button" class="btn bg-black text-white" data-bs-toggle="modal"
+                                data-bs-target="#morenews1">詳細內容</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="morenews1" tabindex="-1" aria-labelledby="ModalLabel1"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLabel1">中秋特輯</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>丸了~丸了~丸了，豬比Q了～<br>
+                                                中秋限定，9/30前焚火架NT$299元，限量50組，另外焚火台最低5折哦～敢快手刀搶購！！！</p>
+                                            <img src="./image/最新消息/中秋限量組.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 活動二-->
+                <div class="col-lg-6 p-2">
+                    <div class="card" style="width: 400px;">
+                        <img src="./image/最新消息/帳篷教搭.jpg" alt="帳篷教搭">
+                        <div class="card-body">
+                            <h5 class="card-title">Hot| X5帳篷搭設教學</h5>
+                            <p class="card-text">KZM 新X5帳篷教搭活動來囉！</p>
+                            <button button type="button" class="btn bg-black text-white" data-bs-toggle="modal"
+                                data-bs-target="#morenews2">詳細內容</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="morenews2" tabindex="-1" aria-labelledby="ModalLabel2"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="morenews2">KZM 新X5帳篷教搭活動</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>希望藉由這次活動讓民眾能夠學會如何快速正確搭設新X5帳篷，全門市皆有參加活動唷！誠摯請各位露友們一同參加~</p>
+                                            <img src="./image/最新消息/教搭時間.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4個最新消息 -->
+                <!-- 活動三-->
+                <div class="col-lg-6 p-2">
+                    <div class="card" style="max-width:400px;">
+                        <img src="./image/最新消息/coleman體驗.jpg" alt="coleman體驗">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleman達人系列商品</h5>
+                            <p class="card-text">兼容四季氣候風貌，頂級性能邀您體驗</p>
+                            <button type="button" class="btn bg-black text-white" data-bs-toggle="modal"
+                                data-bs-target="#morenews5">詳細內容</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="morenews5" tabindex="-1" aria-labelledby="ModalLabel5"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="morenews5">新手入門帳篷套裝組
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Coleman所推出的達人系列商品，歷經長期的嚴峻天候磨鍊下，<br>
+                                                所累積的知識及數據，內化為品質改良的基因，以頂級布面材質、<br>
+                                                高科技通風系統設計及嚴謹的日本工藝製造精神，創作出適應全天候型的高機能產品。<br>
+                                                兼容四季自然風貌，展現出精緻質感及具優異耐用性的戶外用具，<br>
+                                                是 Coleman達人系列，最引以為傲的信念與職責。<br>
+                                            </p>
+                                            <img src="./image/最新消息/coleman-1.jpg" alt="" class="img-fluid">
+                                            <p class="text-center">Coleman 2-ROOM COCOON III 帳篷 魅力價 47,900元
+                                            </p>
+                                            <br><br>
+                                            <img src="./image/最新消息/coleman_table.jpeg" alt="" class="img-fluid">
+                                            <p class="text-center"> Coleman達人蝴蝶桌/90 售價 6,980元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 活動四-->
+                <div class="col-lg-6 p-2">
+                    <div class="card" style="max-width:400px;">
+                        <img src="./image/最新消息/新手入門-1.jpg" alt="新手入門組">
+                        <div class="card-body">
+                            <h5 class="card-title">新手入坑-懶人套裝帳篷組</h5>
+                            <p class="card-text">第一次買露營裝備，不知從何下手嗎？</p>
+                            <button type="button" class="btn bg-black text-white" data-bs-toggle="modal"
+                                data-bs-target="#morenews4">詳細內容</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="morenews4" tabindex="-1" aria-labelledby="ModalLabel4"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="morenews4">新手入門款-帳篷套裝組推薦</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                第一次買露營裝備，不知從何下手嗎？<br>
+                                                我們一次為你準備好『懶人套裝組』省時又超值！<br>
+                                                內容物超豐富，還有話題性最高的沙色MDX等你來帶回家<br>
+                                                #新手入門必買#帳篷配件一次買齊<br>
+
+                                            </p>
+                                            <img src="./image/最新消息/新手入門-1.jpg" alt="" class="img-fluid">
+                                            <img src="./image/最新消息/新手入門-2.jpg" alt="" class="img-fluid">
+                                            <img src="./image/最新消息/新手入門-3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 活動五-->
+
+                <div class="col-lg-6 p-2 ">
+                    <div class="card" style="max-width:400px;">
+                        <img src="./image/最新消息/冬季狂想曲派對.jpg" alt="麋露狂想曲" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">麋露狂想-冬季露營派對</h5>
+                            <p class="card-text">誠摯邀請麋友，一同參與KZM年度盛事。</p>
+                            <button type="button" class="btn bg-black text-white" data-bs-toggle="modal"
+                                data-bs-target="#morenews3">詳細內容</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="morenews3" tabindex="-1" aria-labelledby="ModalLabel3"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="morenews3">麋露狂想曲-冬季露營派對</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-center">《2022 KZM 冬 季 露 營 派 對 活 動 資 訊 表 》</p>
+                                            <p> 歡樂的年末聚會，與來自各地的麋友互相交流、分享經驗~<br>
+                                                用心準備的活動企劃，期待與您共同創造美好回憶！<br>
+                                                誠摯邀請各位麋友，一同參與KZM年度盛事。<br>
+                                                與 KZM 前往 苗栗大湖老官道露營區，在大自然的懷抱中，享受歡聚的美好時光吧！<br>
+                                            </p>
+                                            <img src="./image/最新消息/冬季露營活動.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- 分頁 -->
+            <div class="pgation">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link text-dark" href="#">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link text-dark active" href="news.html">1</a> </li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">2</a> </li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a> </li>
+                        <li class="page-item">
+                            <a class="page-link text-dark" href="news.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- 頁尾 -->
+        <div class="footer_inner">
+            <div class="footer_middel">
+                <div class="aboutme">
+                    <p style="font-size: 18px; text-shadow: 2px 6px grey;">關於我們</p>
+                    <div class="icons">
+                        <a href="https://www.Facebook.com" target="_blank"><img src="./image/首頁/icons8-facebook.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./image/首頁/icons8-instagram.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.line.com" target="_blank"><img src="./image/首頁/icons8-line.svg" alt=""
+                                width="40px"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./image/首頁/icons8-twitter.svg"
+                                alt="" width="40px"></a>
+                    </div>
+                </div>
+
+                <div class="store">
+                    <img src="./image/首頁/map.jpg" alt="logo" style="width:200px; height:100px; margin: 0 30px 10px 0;">
+                    <div>
+                        
+                        <a href="telto:042345678" style="color: white;">電話：042-345678</a><br><br>
+                       
+                        <a href="https://goo.gl/maps/TFn6TpqWjRa9WG2L6" style="color: white;"> 地址：台中市西屯區台灣大道三段301號5樓</a>
+                    </div>
+                </div>
+                <div class="open">
+                    <p>
+                        營業時間：
+                        週一～週五 10:00~19:00<br><br>
+                        聯絡我們：
+                        <a href="mailto:service@campig.com" style="color: white;">service@campig.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <!-- <hr> -->
+                <div>
+                    <p>C@MP!G&#169有限公司 隱私條款｜條款及細則｜退換貨政策</p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

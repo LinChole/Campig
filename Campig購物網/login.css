@@ -1,0 +1,254 @@
+.cantainer_inner{
+    max-width: 1000px;
+    margin: 0 30px;
+    align-items: center;
+   
+}
+.header_inner {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    z-index: 1;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    height: 50px;
+}
+
+.navbar {
+    margin-top: 50px;
+    background-color: black;
+    z-index: 3;
+    /* color: white; */
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0 30px;
+
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+.nav-item a:hover{
+    text-decoration: underline wavy darkgray;
+}
+
+.header_right a:hover{
+    opacity: 0.5;
+}
+
+/* .header_right input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(./image/首頁/icons8-search.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+} */
+
+/* input[type=text]:focus {
+    width: 30%;
+} */
+
+.error{
+    color: red;
+    font-size: 14px;
+}
+.cg{
+    color: greenyellow;
+}
+
+.controlBtn{
+    width: 350px;
+    /* margin: 20px; */
+    padding: 200px 0 80px 0;
+ 
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+   
+ }  
+
+.itemBtn{
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    /* text-align: center; */
+    display: flex;
+    line-height: 60px;
+    border-top: 1px solid #adadad;
+    border-right: 1px solid #adadad;
+    border-left: 1px solid #adadad;
+}
+
+.itemBtn div{
+    width: 175px;
+    height: 60px;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    /* color: white; */
+ 
+}
+.content{
+    width: 100%;
+    padding: 20px 0;
+    border-right: 1px solid #adadad;
+    border-left: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+    /* background-image: linear-gradient(darkgray,rgb(206, 206, 206),white); */
+    /* background-color: black; */
+    background-image: linear-gradient(black, rgb(50, 50, 50));
+    color: white;
+}
+.content div{
+    margin: 20xp 30px;
+    display: none;
+}
+label{
+    font-size: 16px;
+    padding: 10px 10px;
+}
+.content input[type="text"],
+.content input[type="password"]{
+    width: 320px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #adadad;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    
+}
+
+.content input[type="date"]{
+    margin: 10px 10px;
+    width: 320px;
+    height: 35px;
+}
+
+.content input[type="checkbox"]{
+    margin: 0 10px;
+}
+.active{
+    background-color: black;
+    /* background-image: linear-gradient(black, rgb(50, 50, 50)); */
+    color: white;
+}
+.itemBtn div:hover{
+    /* background-color:#f6f6f6; */
+    opacity: 0.5;
+    /* color: white; */
+}
+
+.shoppingLink{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin: 40px 10px 20px 70px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+.shoppingLink:hover{
+    background-color: rgb(62, 61, 61);
+    color: white;
+}
+.popuptest:hover{
+    background-color: rgb(62, 61, 61);
+    color: white;
+}
+
+.popuptest{
+    width: 50%;
+    height: 35px;
+    font-size: 16px;
+    margin: 40px 10px 20px 80px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.show{
+    padding: 20px 120px;
+    color: red;
+    font-size: 18px;
+}
+
+.footer_inner {
+    background-color: black;
+    background-image: linear-gradient(black, rgb(50, 50, 50));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    /* margin: 300px 0 0 0; */
+    bottom: 0;
+    /* z-index: 2; */
+
+}
+
+
+.footer_middel {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icons {
+    /* width: 100px; */
+    display: flex;
+    /* float: right; */
+    margin: 30px 30px;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.store{
+    font-size: 16px;
+    padding-top: 40px;
+    margin: 0 20px;
+    display: flex;
+}
+.open{
+    font-size: 16px;
+    padding-top: 26px;
+    margin: 0 20px;
+}
+
+.footer_bottom {
+    text-align: center;
+    font-size: 10px;
+}

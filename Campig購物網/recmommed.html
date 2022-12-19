@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="RBC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>營區推薦</title>
+
+    <link rel="stylesheet" href="recommed.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+
+            font-family: "Open Sans", sans-serif;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="containerBody">
+        <!-- 頁首 -->
+        <div class="header_inner">
+            <div class="head" id="top">
+                <div class="logo ">
+                    <img src="./image/header/logo_block_1.jpg" alt="logo" style="width:150px; height:50px;">
+                </div>
+
+                <div class="header_right">
+                    <a href="login.php"><img src="./image/header/user-solid.svg" alt="person"
+                            style="width: 35px; height:35px;"></a>
+                    <a href="shoppingPage.html"><img src="./image/header/cart-shopping-solid.svg" alt="shoppingcar"
+                            style="width: 35px; height:35px; margin: 0 20px;"></a>
+                </div>
+            </div>
+
+        </div>
+        <!--導覽列  -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed w-100">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="campig.html" class="nav-link actvie">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link actvie">商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link actvie">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recmommed.html" class="nav-link actvie">營區推薦</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <!-- main 地區分類按鈕 -->
+            <!-- 北部3區 -->
+            <div class="top">
+                <h2>\\ 營區推薦 //</h2>
+                <ul class="nav nav-tabs" id="navTab">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="nav-north-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-north" type="button">北部</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="nav-middbel-tab" data-bs-toggle="tab" data-bs-target="#nav-middbel"
+                            type="button">中部</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="nav-south-tab" data-bs-toggle="tab" data-bs-target="#nav-south"
+                            type="button">南部</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="nav-east-tab" data-bs-toggle="tab" data-bs-target="#nav-east"
+                            type="button">東部</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="nav-north" tabindex="0">
+                        <div class="row">
+                            <!-- <div class="area"> -->
+                            <!-- <h2 id="north">\\ 北部 // </h2> -->
+                            <!-- </div> -->
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 福山緣露</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/north-1.jpg" alt="福山緣露"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                蟲鳴鳥叫不絕於耳。最吸引人的就是水深140公分的大型山泉水泳池，
+                                                以特色原住民圖騰、木雕將部落風情完美詮釋，相當與眾不同。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址： 新北市烏來區卡拉模基2號 <br>
+                                                電話： 0963-929513</p>
+                                        </div>
+                                        <div class="goto"><a href="https://m.easycamp.com.tw/Store_631.html">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 華中露營場</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/north-2.jpg" alt="華中露營場"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                是目前少有的大都會內的公園式露營區，腹地廣大綠草如茵，週邊運動、休閒、
+                                                育樂設施齊全，河濱自行車道貫穿整個營區，通往台北各知名觀光景點，吃喝玩樂樣樣有。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址： 台北市萬華區萬大路底(華中河濱公園左區) <br>
+                                                官網： http://www.camp.org.tw/</p>
+                                        </div>
+                                        <div class="goto"><a href="http://xn--fiq57vhrvoqqq6v.tw/">GO!出發</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 甜蜜點休閒莊園</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/north-3.jpg" alt="甜蜜點休閒莊園"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                交通上非常便利，營地內有水池及植樹造景以及遠方的海景，
+                                                設施也有提供給小孩玩的足球、棒球本壘板、投球九宮格等。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：新北市淡水區奎柔山路189號<br>
+                                                電話：0933-916911</p>
+                                        </div>
+                                        <div class="goto"><a href="http://www.sweetspot.com.tw/">GO!出發</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <!-- 中部3區 -->
+                    <!-- <div class="area">
+                    <h2 id="middel">\\ 中部 //</h2>
+                </div> -->
+                    <div class="tab-pane fade" id="nav-middbel" tabindex="0">
+                        <div class="row">
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 海棠島樂活休閒園區</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/middel-1.jpg" alt="海棠島樂活休閒園區"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                早上可以搭乘環保太陽能遊艇環湖，接著垂釣、漫步在湖邊，享受著歲月靜好的愜意生活。
+                                                若是碰上對的季節，還能看到螢火蟲飛舞，或是觀賞油桐花開滿山谷，讓人們充分體會到湖邊露營的樂趣！
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：苗栗縣頭屋鄉明德村仁隆24鄰37號<br>
+                                                電話：0970-8022791</p>
+                                        </div>
+                                        <div class="goto"><a href="https://www.facebook.com/Begonia.Island">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-sm-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 遇見嵨繞</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/middel-2.jpg" alt=""
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                海拔大約 1000～1500 公尺的地方，來到這裡可以拋下一切塵囂，
+                                                完全融入到山林之中。這裡的山嵐景色美不勝收，夜晚在完全無光害的環境下，
+                                                滿天星斗讓人沉醉。營區內處處充滿主人的巧思，許多手作木造建築及裝飾品，
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：新竹縣尖石鄉玉峰村宇老1鄰9號<br>
+                                                電話：0905-190895</p>
+                                        </div>
+                                        <div class="goto"><a
+                                                href="https://www.easycamp.com.tw/store/camp_stock/1996">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-ms-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 小路露營區</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/middel-3.jpg" alt="小路露營區"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                營帳用各種樹蛙和昆蟲命名，只要來到營本部報到，孩子們就可跟著著營主的爸爸，來趟生態導覽之旅！
+                                                除了從營帳來介紹當地的樹蛙生態外，園區還可滑草、觀察獨角仙，與大自然萬物當鄰居，
+                                                又能寓教於樂的體驗很是特別！
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：台中市新社區崑山里食水嵙6-2號<br>
+                                                電話：0932-658222</p>
+                                        </div>
+                                        <div class="goto"><a href="http://www.nalu.com.tw/">GO!出發</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <!-- 南部3區 -->
+                    <!-- <div class="area">
+                    <h2 id="south">\\ 南部 //</h2>
+                </div> -->
+                    <div class="tab-pane fade" id="nav-south" tabindex="0">
+                        <div class="row">
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 築夢森居</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/south-1.jpg" alt="築夢森居"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                以生態工法砌石、整地，打造成適合動植物生活的營地與生態教室，
+                                                為了推廣環境教育，園區主人帶著大家生態導覽，看螢火蟲、撈魚抓蝦、觀察昆蟲，野趣十足。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：嘉義縣中埔鄉深坑村內灣2號<br>
+                                                電話：0905-931112</p>
+                                        </div>
+                                        <div class="goto"><a href="https://www.facebook.com/dreamriverliu">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 安平四草舟屋</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/south-2.jpg" alt="安平四草舟屋"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                營區內大家能盡情享受野炊、烤肉之外，餐廳將在地養殖的文蛤、草蝦入菜，自製海鮮小火鍋供大家預約品嘗，
+                                                還能順遊台南四草綠色隧道、台江國家公園等充滿生態之美的精采景點，來一趟兼具放鬆與休閒的知性之旅。昆蟲，野趣十足。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：台南市安南區四草大道699號<br>
+                                                電話：0928-746329
+                                            </p>
+                                        </div>
+                                        <div class="goto"><a
+                                                href="https://twstay.com/RWD1/index.aspx?BNB=95boat">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 樂活田莊露營區</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/south-3.jpg" alt="樂活田莊露營區"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                舒適交誼廳可做雨天備案，離月世界及旗山老街近，這營區最吸引大家的森林區，
+                                                在夏天時搭設在森林樹下微風徐徐吹來好舒服呢，但其實還有一個很吸引大家的是可以釣魚唷。
+
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：高雄市內門區田子墘2號<br>
+                                                粉絲專頁：https://www.facebook.com/內門瑞山樂活田莊-783635385118549/
+                                            </p>
+                                        </div>
+                                        <div class="goto"><a
+                                                href="https://www.facebook.com/%E5%85%A7%E9%96%80%E7%91%9E%E5%B1%B1%E6%A8%82%E6%B4%BB%E7%94%B0%E8%8E%8A-783635385118549/">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <hr> -->
+                    <!-- 東部3區 -->
+                    <!-- <div class="area">
+                    <h2 id="east">\\ 東部 //</h2>
+                </div> -->
+
+                    <div class="tab-pane fade" id="nav-east" tabindex="0">
+                        <div class="row">
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 松蘿園林露營區</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/east-1.jpg" alt="松蘿園林露營區"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                晴天時可賞太平洋日出、雨天可看雲海繚繞、晚上還可欣賞超美銀河星空，
+                                                露營客們可享有 360 度的美景環繞，而且因位於中海拔地區，所以空氣十分清新。
+                                                露營區內還附有大片草皮及沙坑，可讓小朋友盡情滑草及玩沙，是適合大人小孩全家一起出遊的絕佳露營地點！
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：宜蘭縣大同鄉松羅村泰雅路二段96巷<br>
+                                                電話：0917-662299
+                                            </p>
+                                        </div>
+                                        <div class="goto"><a href="https://www.facebook.com/songlou.2016">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 虂櫿嶇</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/east-2.jpg" alt="虂櫿嶇"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                虂櫿嶇在當地的地名叫龍過脈，龍過脈是卑南族10個部落裡最北邊的部落，
+                                                營區裡有四個大水池，倒映著藍天白雲與山巒樹影，非常美麗。營主在池邊下掛個大搖椅，讓你盡情享用池邊美景。
+                                                入營當晚也有現烤山豬肉+檸檬小米酒當宵夜，來這裡享受台東悠閒慢步調。
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：台東縣卑南鄉明峰村6鄰龍過脈68號<br>
+                                                電話：0912-707774
+                                            </p>
+                                        </div>
+                                        <div class="goto"><a href="https://www.facebook.com/Danadanaw0822">GO!出發</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6">
+                                <div class="flip-card">
+                                    <h3>&#8670 佐倉高地</h3>
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./image/營區推薦/east-3.jpg" alt="佐倉高地"
+                                                style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p>特色：<br>
+                                                交通非常便利！營區內能看見絕美的夜景，了晚上可以邊烤肉、邊欣賞眼前超美的花蓮夜景外，早晨時還能看日出，風景十分迷人！
+                                            </p>
+                                            <p class="infor">聯絡資訊：<br>
+                                                地址：花蓮縣秀林鄉65之60號<br>
+                                                電話：0921-330235
+                                            </p>
+                                        </div>
+                                        <div class="goto"><a href="https://m.icamping.app/store/ttgd471">GO!出發</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 頁尾 -->
+        <div class="footer_inner">
+            <div class="footer_middel">
+                <div class="aboutme">
+                    <p style="font-size: 18px; text-shadow: 2px 6px grey;">關於我們</p>
+                    <div class="icons">
+                        <a href="https://www.Facebook.com" target="_blank"><img src="./image/首頁/icons8-facebook.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./image/首頁/icons8-instagram.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.line.com" target="_blank"><img src="./image/首頁/icons8-line.svg" alt=""
+                                width="40px"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./image/首頁/icons8-twitter.svg"
+                                alt="" width="40px"></a>
+                    </div>
+                </div>
+                
+                <div class="store">
+                    <img src="./image/首頁/map.jpg" alt="logo" style="width:200px; height:100px; margin: 0 30px 10px 0;">
+                    <div>
+                        電話：
+                        <a href="telto:042345678" style="color: white;">042-345678</a><br><br>
+                        地址：
+                        <a href="https://goo.gl/maps/TFn6TpqWjRa9WG2L6" style="color: white;">台中市西屯區台灣大道三段301號5樓</a>
+                    </div>
+                    </div>
+                <div class="open">
+                    <p>
+                        營業時間：
+                        週一～週五 10:00~19:00<br><br>
+                        聯絡我們：
+                        <a href="mailto:service@campig.com" style="color: white;">service@campig.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <!-- <hr> -->
+                <div>
+                    <p>C@MP!G&#169有限公司 隱私條款｜條款及細則｜退換貨政策</p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const triggerTabList = document.querySelectorAll('#navTab button')
+        triggerTabList.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', event => {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>
+</body>
+
+</html>

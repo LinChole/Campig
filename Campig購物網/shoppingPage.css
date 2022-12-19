@@ -1,0 +1,166 @@
+.header_inner {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    z-index: 2;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    height: 50px;
+}
+
+
+.navbar {
+    margin-top: 50px;
+    background-color: black;
+    z-index: 3;
+    /* color: white; */
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0 30px;
+
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+.nav-item a:hover{
+    text-decoration: underline wavy darkgray;
+}
+
+.header_right a:hover {
+    opacity: 0.5;
+}
+
+.header_right {
+    display: flex;
+    padding: 5px;
+}
+
+.logo2 {
+    margin: 0 15px;
+}
+
+.search input[type=text] {
+    padding: 8px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100px;
+    background: #f1f1f1;
+
+}
+
+.search button {
+    float: right;
+    width: 50px;
+    padding: 8px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: darkgray;
+}
+
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* content */
+
+.carImg{
+    padding-top: 120px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.carP{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(115, 113, 113);
+    font-size: 26px;
+}
+
+.carBtn{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+
+/* 頁尾 */
+.footer_inner {
+    background-color: black;
+    background-image: linear-gradient(black, rgb(50, 50, 50));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    /* margin: 300px 0 0 0; */
+    bottom: 0;
+    /* z-index: 2; */
+
+}
+
+
+.footer_middel {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icons {
+    /* width: 100px; */
+    display: flex;
+    /* float: right; */
+    margin: 30px 30px;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.store{
+    font-size: 16px;
+    padding-top: 40px;
+    margin: 0 20px;
+    display: flex;
+}
+.open{
+    font-size: 16px;
+    padding-top: 26px;
+    margin: 0 20px;
+}
+
+
+.footer_bottom {
+    text-align: center;
+    font-size: 10px;
+}

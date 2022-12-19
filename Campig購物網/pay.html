@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳-宅配</title>
+
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_body">
+        <!-- 頁首 -->
+        <div class="header_inner">
+            <div class="head">
+                <div class="logo ">
+                    <a href="campig.html"><img src="./image/header/logo_block_1.jpg" alt="logo"
+                            style="width:150px; height:50px;"></a>
+                </div>
+
+                <div class="header_right">
+                    <a href="login.php"><img src="./image/header/user-solid.svg" alt="person"
+                            style="width: 35px; height:35px;"></a>
+                    <a href=""><img src="./image/header/cart-shopping-solid.svg" alt="shoppingcar"
+                            style="width: 35px; height:35px; margin: 0 20px;"></a>
+                    <!-- <input type="text" name="search" placeholder="Search"> -->
+                </div>
+            </div>
+        </div>
+        <!--導覽列  -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed w-100">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="campig.html" class="nav-link actvie">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link actvie">商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link actvie">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recmommed.html" class="nav-link actvie">營區推薦</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="order_body">
+                <h2 class="title">\\ 訂單資料 //</h2>
+                <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-dark">我的購物車</span>
+                            <span class="badge bg-dark rounded-pill">3</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">ADAM 戶外式充電油箱LED風扇</h6>
+                                    <!-- <small class="text-muted">description</small> -->
+                                </div>
+                                <span class="text-muted">NT1,790</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">KZM 圖騰不沾煎烤盤附木手把 烤盤</h6>
+                                    <!-- <small class="text-muted">description</small> -->
+                                </div>
+                                <span class="text-muted">NT2,580</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">北緯23度 TPU 3D雙人充氣床墊</h6>
+                                    <!-- <small class="text-muted">description</small> -->
+                                </div>
+                                <span class="text-muted">NT3,850</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                <div class="text-danger">
+                                    <h6 class="my-0">滿2,000免運</h6>
+                                </div>
+                                <span class="text-danger">-NT100</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total</span>
+                                <strong>NT8,120</strong>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">收件者資料</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="name" class="form-label">會員姓名</label>
+                                    <input type="text" class="form-control w-100" id="name" placeholder="" value="林O琳"
+                                        readonly>
+                                    <div class="invalid-feedback">
+                                        請輸入正確資料..
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="tel" class="form-label">聯絡電話</label>
+                                    <input type="text" class="form-control w-100 " id="tel" placeholder=""
+                                        value="0912-***789" required>
+                                    <div class="invalid-feedback">
+                                        請輸入正確資料..
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="123@campig.com">
+                                    <div class="invalid-feedback">
+                                        請輸入有效資料..
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="col-12">
+                                    <label for="address" class="form-label">配送地址</label>
+                                    <!-- <select name="" class="form-select"  id="secAll">
+                                    <option value="" onclick="north()"  id="north1">北部</option>
+                                    <option value="" onclick="middel()" id="middel1">中部</option>
+                                    <option value="" onclick="south()" id="south1">南部</option>
+                                    <option value="" onclick="east()" id="east1">東部</option>
+                                </select> -->
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="radio" onclick="north()" id="north1" name="city"
+                                        class="form-check-input">
+                                    <label for="north1" class="form-label col-md-2 col-sm-2">北部</label>
+
+                                    <input type="radio" name="city" id="middel1" onclick="middel()"
+                                        class="form-check-input">
+                                    <label for="middel1" class="form-label col-md-2 col-sm-2">中部</label>
+
+                                    <input type="radio" name="city" id="south1" onclick="south()"
+                                        class="form-check-input">
+                                    <label for="south1" class="form-label col-md-2 col-sm-2">南部</label>
+
+                                    <input type="radio" name="city" id="east1" onclick="east()"
+                                        class="form-check-input">
+                                    <label for="east1" class="form-label col-md-2 col-sm-2">東部</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                    <select id="country" class="col-12 form-control">
+                                        <option value="">縣市</option>
+                                        <!-- <option value="1">基隆市</option>
+                                    <option value="2">台北市</option>
+                                    <option value="3">新北市</option>
+                                    <option value="4">桃園市</option>
+                                    <option value="5">新竹市</option>
+
+
+
+                                    <option value="6">苗栗縣</option>
+                                    <option value="7">台中市</option>
+                                    <option value="8">南投市</option>
+                                    <option value="9">雲林縣</option>
+                                    <option value="10">嘉義市</option>
+
+
+
+                                    <option value="11">台南市</option>
+                                    <option value="12">高雄市</option>
+                                    <option value="13">新北市</option>
+                                    <option value="14">屏東縣</option>
+
+
+
+                                    <option value="15">宜蘭縣</option>
+                                    <option value="16">花蓮線</option>
+                                    <option value="17">台東線</option> -->
+
+
+                                    </select>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="address" placeholder=""
+                                        value="臺灣大道二段123號2樓">
+                                    <div class="invalid-feedback">
+                                        請輸入有效資料..
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-12">
+                                    <label for="state" class="form-label">寄送備註</label>
+                                    <textarea name="" id="" cols="50" rows="5" class="w-100"></textarea>
+                                    <div class="invalid-feedback">
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <hr class="my-4">
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                    <label class="form-check-label" for="same-address">送貨地址與訂單地址相同</label>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <h4 class="mb-3">支付方式</h4>
+                            </div>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="pay" name="payMethod" type="radio" class="form-check-input" checked>
+                                    <label class="form-check-label" for="pay">貨到付款</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="credit" name="payMethod" type="radio" class="form-check-input">
+                                    <label class="form-check-label" for="credit"><a class="onlineCard" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#cardCollapse">線上刷卡</a></label>
+
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="cardCollapse">
+                                <div class="card card-body">
+
+                                    <div class="row gy-3">
+                                        <div class="col-md-12">
+                                            <label for="cc-name" class="form-label">持卡人姓名</label>
+                                            <input type="text" class="form-control" id="cc-name" placeholder=""
+                                                required>
+                                            <small class="text-muted">卡片上的全名</small>
+                                            <div class="invalid-feedback">
+                                                請輸入正確資料..
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="cc-number" class="form-label">銀行代碼</label>
+                                            <input type="text" class="form-control" id="cc-number" placeholder=""
+                                                required>
+                                            <div class="invalid-feedback">
+                                                請輸入有效資料..
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label for="cc-number" class="form-label">信用卡號</label>
+                                            <input type="text" class="form-control" id="cc-number" placeholder=""
+                                                required>
+                                            <small class="text-muted">適用卡片： <img src="/image/checkOut/cardLogo.jpg"
+                                                    alt="" width="200px"></small>
+                                            <div class="invalid-feedback">
+                                                請輸入有效資料..
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="cc-expiration" class="form-label">有效月/年</label>
+                                            <input type="text" class="form-control" id="cc-expiration" placeholder=""
+                                                required>
+                                            <small class="text-muted">mm / yy</small>
+                                            <div class="invalid-feedback">
+                                                請輸入有效資料..
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="cc-cvv" class="form-label">檢查碼</label>
+                                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                            <small class="text-muted">卡片背面末3碼</small>
+                                            <div class="invalid-feedback">
+                                                請輸入正確資料..
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+
+                            <button class="w-100 btn btn-dark btn-lg" type="button" data-bs-toggle="modal"
+                                data-bs-target="#sumbitModal">確認結帳</button>
+                            <div class="modal fade" id="sumbitModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="#sumbitModal">提醒</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            已送出，完成訂單！
+                                        </div>
+                                        <div class="modal-footer">
+
+                                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal"
+                                                onclick="backCar()">確認</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+        </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- 頁尾 -->
+    <div class="footer_inner">
+        <div class="footer_middel">
+            <div class="aboutme">
+                <p style="font-size: 18px; text-shadow: 2px 6px grey;">關於我們</p>
+                <div class="icons">
+                    <a href="https://www.Facebook.com" target="_blank"><img src="./image/首頁/icons8-facebook.svg" alt=""
+                            width="40px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./image/首頁/icons8-instagram.svg"
+                            alt="" width="40px"></a>
+                    <a href="https://www.line.com" target="_blank"><img src="./image/首頁/icons8-line.svg" alt=""
+                            width="40px"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="./image/首頁/icons8-twitter.svg" alt=""
+                            width="40px"></a>
+                </div>
+            </div>
+
+            <div class="store">
+                <img src="./image/首頁/map.jpg" alt="logo" style="width:200px; height:100px; margin: 0 30px 10px 0;">
+                <div>
+                    電話：
+                    <a href="telto:042345678" style="color: white;">042-345678</a><br><br>
+                    地址：
+                    <a href="https://goo.gl/maps/TFn6TpqWjRa9WG2L6" style="color: white;">台中市西屯區台灣大道三段301號5樓</a>
+                </div>
+            </div>
+            <div class="open">
+                <p>
+                    營業時間：
+                    週一～週五 10:00~19:00<br><br>
+                    聯絡我們：
+                    <a href="mailto:service@campig.com" style="color: white;">service@campig.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <!-- <hr> -->
+            <div>
+                <p>C@MP!G&#169有限公司 隱私條款｜條款及細則｜退換貨政策</p>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        const sAll = document.getElementById('country')
+        function north() {
+
+            var s1 = sAll.innerHTML =
+
+                `<option value="1">請選擇</option>
+            <option value="2">基隆市</option>
+            <option value="3">台北市</option>
+            <option value="4">新北市</option>
+            <option value="5">桃園市</option>
+            <option value="6">新竹市</option>`
+            return
+
+        }
+
+        console.log(north());
+
+        function middel() {
+            const sAll = document.getElementById('country')
+
+            var s2 = sAll.innerHTML =
+
+
+                `<option value="">請選擇</option>
+                <option value="6">苗栗縣</option>
+                 <option value="7">台中市</option>
+                 <option value="8">南投市</option>
+                 <option value="9">雲林縣</option>
+                 <option value="10">嘉義市</option>`
+            return
+
+        }
+
+        console.log(middel());
+
+        function south() {
+
+            var s3 = sAll.innerHTML =
+
+
+                `<option value = "" > 請選擇</option>
+                <option value="11">台南市</option>
+                <option value="12">高雄市</option>
+                <option value="13">新北市</option>
+                 <option value="14">屏東縣</option>`
+            return
+
+        }
+
+        console.log(south());
+
+        function east() {
+
+            var s4 = sAll.innerHTML =
+
+
+                `<option value = "" > 請選擇</option >
+                <option value="15">宜蘭縣</option>
+               <option value="16">花蓮線</option>
+                 <option value="17">台東線</option>`
+            return
+
+        }
+
+        console.log(east());
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        function backCar() {
+            location.href = "shoppingPage.html";
+        }
+
+
+    </script>
+
+</body>
+
+</html>

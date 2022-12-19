@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="RBC">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有商品-2</title>
+
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="inner">
+        <!-- 頁首 -->
+        <div class="header_inner">
+            <div class="head" id="top">
+                <div class="logo ">
+                    <a href="campig.html"><img src="./image/header/logo_block_1.jpg" alt="logo"
+                            style="width:150px; height:50px;"></a>
+                </div>
+
+                <div class="header_right">
+                    <div class="logo1">
+                        <a href="login.php"><img src="./image/header/user-solid.svg" alt="person"
+                                style="width: 35px; height:35px;"></a>
+                    </div>
+                    <div class="logo2">
+                        <a href="shoppingPage.html"><img src="./image/header/cart-shopping-solid.svg" alt="shoppingcar"
+                                style="width: 35px; height:35px; margin: 0 20px;"></a>
+                    </div>
+                    <!-- <div class="search">
+                        <form action="">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search.." name="search">
+                        </form>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!--導覽列  -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed w-100">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="campig.html" class="nav-link actvie">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link actvie">商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link actvie">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recmommed.html" class="nav-link actvie">營區推薦</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main">
+                <!-- 左邊下拉式產品列 -->
+                <div class="sidenav justify-content-center">
+                    <a href="product.html">所有商品</a>
+                    <hr>
+                    <a href="product_top.html">熱銷商品</a>
+                    <a href="#">本月新品</a>
+                    <hr>
+                    <button class="dropdown-btn">帳篷
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="product_tent.html">帳篷</a>
+                        <a href="product_canopy.html">天幕</a>
+                    </div>
+                    <a href="#">寢具</a>
+                    <a href="#">桌椅</a>
+                    <a href="#">收納</a>
+                    <a href="#">炊具</a>
+                    <a href="#">燈具</a>
+                    <a href="#">工具</a>
+                    <a href="#">保冷</a>
+                </div>
+
+                <!-- 右邊商品，一排3個3列  -->
+                <!-- row 1 -->
+                <div class="prod_inner">
+                    <div class="prod_head">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active">所有商品</li>
+                                <li class="breadcrumb-item"><a href="#"></a></li>
+                                <!-- <li class="breadcrumb-item active" >Data</li> -->
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/桌椅/桌2.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title">韓國SKOGEN 焚火圓鐵桌 鐵桌</h6>
+                                    <p class="card-text">NT$11,000</p>
+                                    <p class="card-text-sale text-danger"> NT$8,800</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/收納/收納包2.webp" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">ADAM 中型戰術收納包 黑色/米色</h6>
+                                    <p class="card-text">NT$ 1,290</p>
+                                    <p class="card-text-sale text-danger"> NT$ 990</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/爐具/爐具1.webp" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">LOGOS 可合體鑄鐵深煎鍋－M</h6>
+                                    <p class="card-text text-white">$</p>
+                                    <p class="card-text-sale"> NT$ 1,080</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- row 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/工具/魚骨釘.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">彈簧魚骨釘 加長版 買10送收納袋</h6>
+                                    <p class="card-text text-white">$</p>
+                                    <p class="card-text-sale"> NT$19</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/保冰/冰箱1.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">Coleman 15L EXCURSION冰箱/藍</h6>
+                                    <p class="card-text">NT$1,300</p>
+                                    <p class="card-text-sale text-primary">售完</p>
+                                    <!-- <select class="form-select" name="" id="amount" disabled>
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100 disabled" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/帳篷/帳篷8.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">Canvascamp 豪華型屋帳-巡守者</h6>
+                                    <p class="card-text text-white">$</p>
+                                    <p class="card-text-sale"> 42,000</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- row 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/帳篷/天幕6.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">Camperson 5.4x4.4撞色銀膠天幕</h6>
+                                    <p class="card-text">NT$4,180</p>
+                                    <p class="card-text-sale text-danger">NT$3,300</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/寢具/床墊1.webp" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">努特NUIT 奇幻森林迴型獨立筒充氣床</h6>
+                                    <p class="card-text text-white">$</p>
+                                    <p class="card-text-sale">NT$ 3,280</p>
+                                    <!-- <select class="form-select" name="" id="amount">
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="max-width:200px;">
+                                <img src="./image/商品/寢具/打氣機.jpeg" alt="" class="pr-img">
+                                <div class="card-body">
+                                    <h6 class="card-title ">北緯23度 COMMA 逗點 強力打氣機</h6>
+                                    <p class="card-text">NT$990</p>
+                                    <p class="card-text-sale text-primary">售完</p>
+                                    <!-- <select class="form-select" name="" id="amount" disabled>
+                                    <option selected>請選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                    <div class="border" id="btn">
+                                        <a class="btn text-light w-100" href="#">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 分頁 -->
+                    <div class="pgation ">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="product.html">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-dark" href="product.html">1</a> </li>
+                                <li class="page-item"><a class="page-link text-dark active" href="product_p2.html">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">3</a> </li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">4</a> </li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">5</a> </li>
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 頁尾 -->
+        <div class="footer_inner">
+            <div class="footer_middel">
+                <div class="aboutme">
+                    <p style="font-size: 18px; text-shadow: 2px 6px grey;">關於我們</p>
+                    <div class="icons">
+                        <a href="https://www.Facebook.com" target="_blank"><img src="./image/首頁/icons8-facebook.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./image/首頁/icons8-instagram.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.line.com" target="_blank"><img src="./image/首頁/icons8-line.svg" alt=""
+                                width="40px"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./image/首頁/icons8-twitter.svg"
+                                alt="" width="40px"></a>
+                    </div>
+                </div>
+
+                <div class="store">
+                    <img src="./image/首頁/map.jpg" alt="logo" style="width:200px; height:100px; margin: 0 30px 10px 0;">
+                    <div>
+                        電話：
+                        <a href="telto:042345678" style="color: white;">042-345678</a><br><br>
+                        地址：
+                        <a href="https://goo.gl/maps/TFn6TpqWjRa9WG2L6" style="color: white;">台中市西屯區台灣大道三段301號5樓</a>
+                    </div>
+                </div>
+                <div class="open">
+                    <p>
+                        營業時間：
+                        週一～週五 10:00~19:00<br><br>
+                        聯絡我們：
+                        <a href="mailto:service@campig.com" style="color: white;">service@campig.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <!-- <hr> -->
+                <div>
+                    <p>C@MP!G&#169有限公司 隱私條款｜條款及細則｜退換貨政策</p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

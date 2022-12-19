@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+
+    <link rel="stylesheet" href="./campig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_body">
+        <!-- 頁首 -->
+        <div class="header_inner">
+            <div class="head">
+                <div class="logo ">
+                    <a href="campig.html"><img src="./image/header/logo_block_1.jpg" alt="logo"
+                            style="width:150px; height:50px;"></a>
+                </div>
+
+                <div class="header_right">
+                    <a href="login.php"><img src="./image/header/user-solid.svg" alt="person" style="width: 35px; height:35px;"></a>
+                    <a href="shoppingPage.html"><img src="./image/header/cart-shopping-solid.svg" alt="shoppingcar"
+                            style="width: 35px; height:35px; margin: 0 20px;"></a>
+                    <!-- <input type="text" name="search" placeholder="Search"> -->
+                </div>
+            </div>
+        </div>
+        <!--導覽列  -->
+        <nav class="navbar navbar-dark navbar-expand-lg position-fixed w-100">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="campig.html" class="nav-link actvie">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link actvie">商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link actvie">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recmommed.html" class="nav-link actvie">營區推薦</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main-->
+        <!-- 活動到數 -->
+        <div class="container">
+            <div class="lastinner" id="gotop">
+                <span class="lastP">全館免運活動倒數：</span>
+                <span class="lastDay">日</span>
+                <span class="lastHour">時</span>
+                <span class="lastMinutes">分</span>
+                <span class="lastSeconed">秒</span>
+            </div>
+
+            <!-- 輪播 -->
+            <div class="slideshow_container">
+
+                <div class="mySlides fade"><img src="./image/首頁/輪播1.jpg" alt="pic1" width="700px" height="500px"></div>
+                <div class="mySlides fade"><img src="./image/首頁/輪播3.jpeg" alt="pic2" width="700px" height="500px"></div>
+                <!-- <div class="mySlides fade"><img src="./image/首頁/輪播3.jpg" alt="pic3" width="700px" height="500px"></div> -->
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <!-- <span class="dot"></span> -->
+                    <!-- <span class="dot"></span> -->
+                </div>
+            </div>
+            <hr>
+            <!-- 品牌故事 -->
+            <div class="title">\\ 品牌小故事 //</div>
+            <div class="story">
+                <div class="strImg">
+                    <img src="./image/首頁/story1.jpg" alt="">
+                </div>
+                <div class="strp">
+                    <p>2020那年的仲夏疫情肆虐，我與三五好友約定的微旅行，改為探索台灣之美，正因如此而意外地展開我們露營之旅。</p>
+                    <p>露營最迷人的地方在於能夠遠離塵囂，回到自己心靈裡就有的安穩中，在大自然流浪中，那種簡單就很完美的幸福，是在都市裡找不到的。
+                        喝點小酒、聽點音樂，然後跟著旋律跳舞，累了就躺著曬太陽，享受自然帶給自己的正能量，完全放空，淨空自己累積的煩惱。
+                    </p>
+                    <p>熱愛大自然的我們將自我體驗以及經驗，不藏私的與大家分享，邀請您一同進入露營之路。</p>
+
+                </div>
+            </div>
+            <br><br>
+            <hr>
+            <!-- 回到最上面 -->
+            <a href="#gotop" class="btn" id="btn_top">&#8679</a>
+            <div class="top">
+                <!-- 熱銷商品 -->
+                <div class="title">\\ 熱銷商品 //</div>
+                <div class="tophead">
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top1.jpeg" alt="">
+                        <div class="info">
+                            <p>柯曼超耐重多功能折疊網桌</p>
+                            <p>NT$1,240</p>
+                            <p><button class="button">加入購物車</button></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top2.webp" alt="top2">
+                        <div class="info">
+                            <p>ADAM 戶外式充電油箱LED風扇</p>
+                            <p>NT$990</p>
+                            <p><button class="button">加入購物車</button></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top3.webp" alt="top1">
+                        <div class="info">
+                            <p>G40 LED復古串燈 塑膠燈串</p>
+                            <p>NT$790</p>
+                            <p><button class="button">加入購物車</button></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="row"> -->
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top4.webp" alt="top6">
+                        <div class="info">
+                            <p>KZM 圖騰不沾煎烤盤附木手把</p>
+                            <p>NT$1,980</p>
+                            <p><button class="button">加入購物車</button></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top5.webp" alt="top5">
+                        <div class="top">
+                            <p>Coleman 橄欖山印地安帳3-4人</p>
+                            <p>NT$7,600</p>
+                            <p><button class="button">加入購物車</button></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4 col-sm-6"> -->
+                    <div class="card_body" style="width:600px;">
+                        <img src="./image/首頁/top6.jpg" alt="top4">
+                        <div class="info">
+                            <p>北緯23度 TPU 3D雙人充氣床墊</p>
+                            <p>NT$3,850</p>
+                            <p><button class="button">加入購物車</button></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+
+                <div>
+                    <a href="product.html" class="teach_btn">&#10140 more...</a>
+                </div>
+            </div>
+            <hr>
+            <!-- 最新消息 -->
+            <div class="title">\\ 最新消息 //</div>
+            <div class="newsImg">
+                <img src="./image/首頁/會員招募.jpg" alt="" class="w-100">
+            </div>
+            <div class="newshead">
+                <img src="/image/商品/配送流程.png" alt="" style="width: 600px;">
+                <img src="/image/首頁/反詐騙.jpg" alt="" style="width: 600px;">
+
+            </div>
+
+
+            <div class="news_inner">
+                <ul class="news_link">
+                    <li><a href="./news.html">&#8670 KZM 麋鹿狂想曲-冬季露營派對！</a><i>2022.09.15</i></li>
+                    <hr>
+                    <li><a href="./news.html">&#8670 中秋特輯：丸了～丸了～丸了～豬比Q了～</a><i>2022.08.30</i></li>
+                    <hr>
+                    <li><a href="./news.html">&#8670 Hot| X5帳篷搭設教學活動來囉...</a><i>2022.07.25</i></li>
+                    <hr>
+                </ul>
+                <hr>
+            </div>
+
+            <div class="recommed">
+
+                <img src="./image/首頁/網友推薦.jpg" alt="" class="w-100">
+
+            </div>
+            <hr>
+            <!-- youtube video -->
+            <div class="bg-black">
+                <img src="/image/首頁/youtube.jpg" alt="" style="width: 200px; display: block; margin: auto;">
+            </div>
+            <div class="teach_inner">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" id="teach_top">
+                        <video width="450" height="255" poster="./image/首頁/帳篷教搭.jpg" controls muted>
+                            <source src="./image/首頁/帳篷教搭.mov" type="video/mp4">
+                            <source src="./image/首頁/帳篷教搭.mov" type="video/ogg">
+                        </video>
+                    </div>
+                    <div class="col-lg-6" id="teach_top">
+                        <video width="450" height="255" poster="./image/首頁/天幕教搭.jpg" controls muted>
+                            <source src="./image/首頁/天幕教搭.mov" type="video/mp4">
+                            <source src="./image/首頁/天幕教搭.mov" type="video/ogg">
+                        </video>
+                    </div>
+                    <div>
+                        <a href="#collapse_teach" data-bs-toggle="collapse" class="teach_btn">&#10140 more...</a>
+                    </div>
+                </div>
+
+
+                <div class="collapse" id="collapse_teach">
+                    <div class="card card-body" style="border: none;">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6" id="teach">
+                                <video width="450" height="255" poster="./image/首頁/帳篷收納.jpg" controls muted>
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/mp4">
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/ogg">
+                                </video>
+                                <!-- <iframe width="450" height="255" src="https://www.youtube.com/embed/9P8rZZ8C-wc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe> -->
+                            </div>
+                            <div class="col-lg-6" id="teach">
+                                <video width="450" height="255" poster="./image/首頁/露營椅.jpg" controls muted>
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/mp4">
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/ogg">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6" id="teach">
+                                <video width="450" height="255" poster="./image/首頁//露營桌.jpg" controls muted>
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/mp4">
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/ogg">
+                                </video>
+                            </div>
+                            <div class="col-lg-6" id="teach">
+                                <video width="450" height="255" poster="./image/首頁/營釘錘.jpg" controls muted>
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/mp4">
+                                    <source src="./image/首頁/帳篷教搭.mov" type="video/ogg">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 頁尾 -->
+        <div class="footer_inner">
+            <div class="footer_middel">
+                <div class="aboutme">
+                    <p style="font-size: 18px; text-shadow: 2px 6px grey;">關於我們</p>
+                    <div class="icons">
+                        <a href="https://www.Facebook.com" target="_blank"><img src="./image/首頁/icons8-facebook.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./image/首頁/icons8-instagram.svg"
+                                alt="" width="40px"></a>
+                        <a href="https://www.line.com" target="_blank"><img src="./image/首頁/icons8-line.svg" alt=""
+                                width="40px"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./image/首頁/icons8-twitter.svg"
+                                alt="" width="40px"></a>
+                    </div>
+                </div>
+
+                <div class="store">
+                    <img src="./image/首頁/map.jpg" alt="logo" style="width:200px; height:100px; margin: 0 30px 10px 0;">
+                    <div>
+                        電話：
+                        <a href="telto:042345678" style="color: white;">042-345678</a><br><br>
+                        地址：
+                        <a href="https://goo.gl/maps/TFn6TpqWjRa9WG2L6" style="color: white;">台中市西屯區台灣大道三段301號5樓</a>
+                    </div>
+                </div>
+                <div class="open">
+                    <p>
+                        營業時間：
+                        週一～週五 10:00~19:00<br><br>
+                        聯絡我們：
+                        <a href="mailto:service@campig.com" style="color: white;">service@campig.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <!-- <hr> -->
+                <div>
+                    <p>C@MP!G&#169有限公司 隱私條款｜條款及細則｜退換貨政策</p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        //活動倒數
+        const
+            lastDay = document.querySelector('.lastDay'),
+            lastHour = document.querySelector('.lastHour'),
+            lastMinutes = document.querySelector('.lastMinutes'),
+            lastSeconed = document.querySelector('.lastSeconed'),
+            deadline = new Date('2022-09-30 00:00');
+
+        function countDown() {
+            const nowDay = new Date(), timeRemainning = deadline - nowDay;
+            let day, hour, minutes, seconed;
+
+            if (timeRemainning < 0) {
+                return 0;
+            }
+
+            day = Math.floor(timeRemainning / 1000 / 60 / 60 / 24);
+            hour = Math.floor(timeRemainning / 1000 / 60 / 60 % 24);
+            minutes = Math.floor(timeRemainning / 1000 / 60 % 60);
+            seconed = Math.floor(timeRemainning / 1000 % 60);
+
+            lastDay.innerHTML = day + '天';
+            lastHour.innerHTML = hour + '時';
+            lastMinutes.innerHTML = minutes + '分';
+            lastSeconed.innerHTML = seconed + '秒';
+
+            setTimeout(countDown, 1000);
+
+        }
+        countDown();
+
+
+
+
+
+        // 輪播
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
